@@ -3,7 +3,8 @@ import lodash from 'lodash';
 import Modal from "react-modal";
 import { FaTimes } from "react-icons/fa";
 import { Button } from "./components/button";
-import ProductList from "./components/product-list-components";
+import { Posts } from "./components/product-list-components";
+// import ProductList from "./components/product-list-components";
 import { Form } from "./components/form";
 import logo from "./images/droppe-logo.png";
 import img1 from "./images/img1.png";
@@ -151,7 +152,7 @@ export class ShopApp extends React.Component<
             <span>Number of favorites: {this.state.numFavorites}</span>
           </div>
 
-          {products && !!products.length ? <ProductList products={products} onFav={this.favClick} /> : <div></div>}
+          {products && !!products.length ? <Posts products={products} onFav={this.favClick} /> : <div></div>}
         </div>
 
         <>
