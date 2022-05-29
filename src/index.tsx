@@ -1,11 +1,9 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import Modal from "react-modal"
-import "./index.css";
-import { ShopApp } from "./shop-app";
+import { ShopApp } from "./containers/Shop/Shop";
 import * as serviceWorker from "./serviceWorker";
 
-Modal.setAppElement("#root")
+import "./index.css";
 
 ReactDOM.render(
   <React.StrictMode>

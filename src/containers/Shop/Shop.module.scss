@@ -1,0 +1,53 @@
+.wrapper {
+  max-width: 1280px;
+  margin: auto;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  & > img {
+    height: 66px;
+  }
+}
+
+.topImages {
+  display: flex;
+  justify-content: space-around;
+  padding: 32px 0;
+
+  & > img {
+    max-height: 15em;
+  }
+}
+
+.container {
+  max-width: 750px;
+  margin: auto;
+}
+
+.main {
+  padding: 32px 0;
+}
+
+.message {
+  text-align: center;
+}
+
+.modalContentHelper {
+  position: relative;
+  height: 100%;
+  padding: 64px 0;
+}
+
+.modalClose {
+  cursor: pointer;
+  color: rgba(0, 0, 0, 1);
+  font-size: 24px;
+  line-height: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+}

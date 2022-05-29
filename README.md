@@ -1,5 +1,17 @@
 # Developer at Droppe - React refactoring task
 
+## What has been improved?
+- Improved typing
+- Added useful packages - axios and classnames. Removed lodash (used native js methods instead)
+- I moved the common components that can be used in the application later to the common folder. Using these components in the future, you can avoid code repetition and speed up the application (due to the fact that new components are not created, links to old ones are used instead)
+- Removed optional styles and html tags
+- Сhanged the project structure - now the components are in the 'components' folder and the screens are in the 'containers' folder. In the future, this will allow you to more conveniently manage the codebase.
+- Fixed the logic of adding a product to favorites (now the product is added to favorites by the id field). If it was added by the title field, this could cause incorrect behavior if the titles of the products were the same.
+- Changed the logic of http requests: 1) moved the requests to a separate file (api.ts); 2) added request status processing (LoadingStatus). Thanks to this, you can get rid of some variables in useState (for example, when we showed "Addign post ...")
+- Used scss instead of css. later in the project, you can use mixins to set the font / color and other repetitive things
+- Rewrote the class component to a functional one
+- Other minor edits that I don't remember :)
+
 ## Available Scripts
 
 In the project directory, you can run:
